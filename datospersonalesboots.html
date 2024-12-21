@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Datos Personales</a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mantenimiento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Consulta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Busqueda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <main class="col-md-9">
+                <section class="bg-light p-4">
+                    <h2>Datos Personales</h2>
+                    <form action="">
+
+                        <div class="form-group">
+                            <label for="identificacion">Identificacion:</label>
+                            <input class="form-control" type="text" id="identificacion" name="identificacion" required placeholder="1-1234-1234"
+                                pattern="\d{1}-\d{4}-\d{4}" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo:</label>
+                            <input class="form-control" type="text" id="nombre" name="nombre" required placeholder="Nombre Apellido">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                            <input class="form-control" type="date" id="fechaNacimiento" name="fechaNacimiento" max="2023-10-26" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="salario">Monto del Salario:</label>
+                            <input class="form-control" type="number" id="salario" name="salario" value="0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="genero">Género:</label>
+                            <select class="form-control" id="genero" name="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-check">
+                            <label>Estado Civil:</label>
+                            <div>
+                                <input class="form-check-input" type="radio" id="soltero" name="estadoCivil" value="soltero" checked>
+                                <label class="form-check-label" for="soltero">Soltero</label>
+                            </div>
+                        
+                            <div>
+                                <input class="form-check-input" type="radio" id="casado" name="estadoCivil" value="casado">
+                                <label class="form-check-label" for="casado">Casado</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cantidadHijos">Cantidad de Hijos:</label>
+                            <input class="form-control" type="number" id="cantidadHijos" name="cantidadHijos" value="0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otrosDatos">Otros Datos de Interés:</label>
+                            <textarea class="form-control" id="otrosDatos" name="otrosDatos" rows="4" placeholder="Ingresa otros datos aquí"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+                    </form>
+        
+                </section>
+            </main>
+            <aside class="col-md-3 bg-secondary text-white p-4">
+                <h5>Menu Lateral</h5>
+                    <button class="btn btn-light btn-block mt-2">Opcion 1</button>
+                    <button class="btn btn-light btn-block mt-2">Opcion 2</button>
+                    <button class="btn btn-light btn-block mt-2">Opcion 3</button>
+            </aside>
+        </div>
+    </div>
+
+    
+    <footer class="bg-primary text-white text-center py-4"><p>Derechos reservados 2024</p></footer>
+
+    <!-- Modales -->
+    <!-- Modal datos de contacto -->
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
